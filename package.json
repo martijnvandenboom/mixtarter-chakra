@@ -1,0 +1,56 @@
+{
+  "private": true,
+  "name": "mixtarter-chakra",
+  "description": "",
+  "author": "sozonome",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "lint": "eslint app",
+    "lint:fix": "eslint app --fix && yarn format",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write app",
+    "up": "yarn upgrade-interactive",
+    "up-latest": "yarn up --latest",
+    "release": "cross-env HUSKY=0 standard-version",
+    "push-release": "git push --follow-tags origin main",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.7",
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@remix-run/node": "^1.7.5",
+    "@remix-run/react": "^1.7.5",
+    "@remix-run/serve": "^1.7.5",
+    "@remix-run/vercel": "^1.7.5",
+    "framer-motion": "^6.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.2.0",
+    "@commitlint/cz-commitlint": "^17.2.0",
+    "@remix-run/dev": "^1.7.5",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "commitizen": "^4.2.5",
+    "commitlint": "^17.2.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.26.0",
+    "eslint-config-sznm": "^1.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.7.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false
+}
